@@ -1,0 +1,122 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #090d0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 25px 20px;
+  text-align: center;
+  background: #101713;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #35d477;
+}
+
+header p {
+  color: #8c9b91;
+  font-size: 11px;
+  margin-top: 8px;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 17px 5px;
+  background: #151e18;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 65px 25px;
+  background: linear-gradient(135deg, #163b27, #090d0b);
+}
+
+.tag, .number {
+  color: #35d477;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.hero p {
+  color: #c0ccc4;
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 22px;
+  background: #35d477;
+  color: #07110b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#news, #about {
+  padding: 35px 20px;
+}
+
+h2 {
+  margin-bottom: 22px;
+  font-size: 24px;
+}
+
+.news {
+  background: #141b17;
+  padding: 23px;
+  margin-bottom: 15px;
+  border: 1px solid #25352b;
+  border-radius: 9px;
+}
+
+.news h3 {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.news p, #about p {
+  color: #aebbb2;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #829087;
+  background: #101713;
+  font-size: 12px;
+}
