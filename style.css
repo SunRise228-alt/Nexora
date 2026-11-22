@@ -10,21 +10,24 @@ html {
 }
 
 body {
-  background: #090d0b;
-  color: white;
+  background: #080c0a;
+  color: #f5f7f5;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-  padding: 25px 20px;
+  padding: 30px 20px;
   text-align: center;
-  background: #101713;
+  background: #0d1510;
+  border-bottom: 1px solid #1c3023;
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .logo span {
@@ -32,91 +35,165 @@ header {
 }
 
 header p {
-  color: #8c9b91;
+  color: #91a397;
   font-size: 11px;
-  margin-top: 8px;
-  letter-spacing: 3px;
+  margin-top: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  padding: 17px 5px;
-  background: #151e18;
+  gap: 32px;
+  padding: 20px 10px;
+  background: #101a13;
+  border-bottom: 1px solid #203527;
 }
 
 nav a {
-  color: white;
+  color: #d4dfd7;
   text-decoration: none;
   font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #35d477;
 }
 
 .hero {
-  padding: 65px 25px;
-  background: linear-gradient(135deg, #163b27, #090d0b);
+  padding: 100px 8%;
+  min-height: 480px;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      #17452c 0%,
+      transparent 40%
+    ),
+    linear-gradient(135deg, #10291b, #080c0a 75%);
+  border-bottom: 1px solid #203527;
 }
 
 .tag, .number {
   color: #35d477;
   font-size: 12px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .hero h1 {
-  font-size: 38px;
-  margin: 20px 0;
-  max-width: 500px;
+  font-size: clamp(36px, 7vw, 58px);
+  line-height: 1.15;
+  margin: 25px 0;
+  max-width: 650px;
+  letter-spacing: -2px;
 }
 
 .hero p {
-  color: #c0ccc4;
-  line-height: 1.7;
+  color: #b4c3b9;
+  line-height: 1.8;
+  max-width: 550px;
 }
 
 .button {
   display: inline-block;
-  margin-top: 25px;
-  padding: 13px 22px;
+  margin-top: 30px;
+  padding: 15px 26px;
   background: #35d477;
   color: #07110b;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #69ee9d;
+  transform: translateY(-3px);
 }
 
 #news, #about {
-  padding: 35px 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 25px;
 }
 
 h2 {
-  margin-bottom: 22px;
-  font-size: 24px;
+  font-size: 29px;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
 }
 
 .news {
-  background: #141b17;
-  padding: 23px;
-  margin-bottom: 15px;
-  border: 1px solid #25352b;
-  border-radius: 9px;
+  background: linear-gradient(145deg, #151f18, #0d130f);
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #263c2d;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.news:hover {
+  border-color: #35d477;
+  transform: translateY(-4px);
 }
 
 .news h3 {
-  margin: 15px 0;
-  font-size: 20px;
+  margin: 17px 0 12px;
+  font-size: 22px;
 }
 
 .news p, #about p {
   color: #aebbb2;
-  line-height: 1.6;
+  line-height: 1.8;
+}
+
+#about {
+  border-top: 1px solid #203527;
 }
 
 footer {
-  padding: 25px;
+  padding: 30px 20px;
   text-align: center;
-  color: #829087;
-  background: #101713;
+  color: #84968a;
+  background: #0d1510;
+  border-top: 1px solid #203527;
   font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 25px 10px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 75px 25px;
+    min-height: 430px;
+  }
+
+  .hero h1 {
+    font-size: 39px;
+  }
+
+  #news, #about {
+    padding: 45px 18px;
+  }
+
+  .news {
+    padding: 23px;
+  }
+
+  .news h3 {
+    font-size: 19px;
+  }
 }
