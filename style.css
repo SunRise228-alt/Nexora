@@ -206,3 +206,26 @@ footer {
 .news-link .news {
   cursor: pointer;
 }
+
+.news,
+.news-link .news {
+  display: block;
+  background: linear-gradient(145deg, #151f18, #0d130f);
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #263c2d;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.news-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-link:hover .news,
+.news:hover {
+  border-color: #35d477;
+  transform: translateY(-4px);
+}
